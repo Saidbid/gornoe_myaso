@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Горное мясо — мясной магазин в Архызе | Свежее мясо, шашлык в маринаде</title>
+<meta name="description" content="Горное мясо — мясной магазин в Архызе (КЧР, ул. Ленина, 35). Свежая говядина, баранина, курица, форель, мясо в маринаде, уголь и всё для пикника.">
+<meta name="keywords" content="мясо Архыз, мясной магазин Архыз, шашлык Архыз, мясо в маринаде, баранина Архыз, форель Архыз">
+<meta property="og:title" content="Горное мясо — мясной магазин в Архызе">
+<meta property="og:description" content="Свежие продукты и мясо в маринаде в самом сердце Архыза.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Store","name":"Горное мясо","address":{"@type":"PostalAddress","streetAddress":"улица Ленина, 35","addressLocality":"Архыз","addressRegion":"Карачаево-Черкесия","addressCountry":"RU"},"telephone":"+79886060203","sameAs":["https://t.me/meatarkhyz","https://instagram.com/meat_arkhyz"]}
+</script>
+<style>
+:root{--red:#c4161c;--red2:#8f0d12;--black:#111;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--white);background:#0d0d0d;line-height:1.5}
+body::before{content:"";position:fixed;inset:0;z-index:-1;
+background:
+linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.85)),
+url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 600' preserveAspectRatio='xMidYMax slice'><defs><linearGradient id='s' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%23401012'/><stop offset='1' stop-color='%23111'/></linearGradient></defs><rect width='1200' height='600' fill='url(%23s)'/><path d='M0 420 L150 250 L240 330 L380 130 L520 320 L640 200 L780 340 L930 150 L1070 300 L1200 230 L1200 600 L0 600Z' fill='%232a1a1a'/><path d='M380 130 L420 185 L395 178 L380 200 L362 178 L340 188Z M930 150 L965 200 L945 195 L930 215 L912 195 L895 205Z' fill='%23ddd' opacity='.7'/><path d='M0 500 L180 380 L330 470 L520 360 L700 480 L900 380 L1200 500 L1200 600 L0 600Z' fill='%23181010'/></svg>") center bottom/cover no-repeat,#111}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 18px}
+header{position:sticky;top:0;z-index:50;background:rgba(10,10,10,.92);backdrop-filter:blur(8px);border-bottom:2px solid var(--red)}
+.bar{display:flex;align-items:center;gap:16px;height:66px}
+.logo{font-weight:900;letter-spacing:1px;font-size:20px;white-space:nowrap}
+.logo span{color:var(--red)}
+nav{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+nav a{padding:8px 10px;border-radius:8px;font-size:14px;opacity:.85}
+nav a:hover,nav a.on{background:var(--red);opacity:1}
+.btn{display:inline-block;border:0;cursor:pointer;background:var(--red);color:#fff;padding:12px 22px;border-radius:10px;font-weight:700;font-size:15px;transition:.2s}
+.btn:hover{background:#e01b22;transform:translateY(-2px)}
+.btn:disabled{opacity:.6;cursor:wait;transform:none}
+.btn.ghost{background:transparent;border:2px solid #fff}
+.btn.ghost:hover{background:#fff;color:#000}
+.btn.small{padding:8px 12px;font-size:13px}
+.burger{display:none;background:none;border:0;color:#fff;font-size:28px;cursor:pointer;margin-left:auto}
+@media(max-width:960px){
+ .burger{display:block}
+ nav{display:none;position:absolute;top:66px;left:0;right:0;background:#0a0a0a;flex-direction:column;padding:10px 18px;margin:0}
+ nav.open{display:flex}
+}
+.page{display:none;padding:40px 0 70px;animation:fade .4s}
+.page.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1}}
+h1{font-size:clamp(40px,9vw,96px);font-weight:900;letter-spacing:2px;line-height:1}
+h2{font-size:clamp(26px,4vw,40px);margin-bottom:8px}
+h2 em{color:var(--red);font-style:normal}
+.lead{opacity:.85;max-width:720px;margin-bottom:24px}
+.hero{min-height:78vh;display:flex;flex-direction:column;justify-content:center;gap:20px}
+.hero h1 span{color:var(--red)}
+.hero p{font-size:clamp(17px,2.4vw,24px);max-width:640px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin:24px 0}
+.box{background:rgba(20,20,20,.88);border:1px solid #333;border-radius:16px;padding:22px}
+.box:hover{border-color:var(--red)}
+.box b{display:block;font-size:18px;margin-bottom:6px}
+.box .ic{font-size:34px}
+.cat{cursor:pointer;background:linear-gradient(135deg,var(--red2),#2a0a0b);text-align:center;padding:34px 18px;transition:.2s}
+.cat:hover{transform:translateY(-4px)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;margin:16px 0 36px}
+.p{background:#fff;color:#111;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 8px 24px rgba(0,0,0,.4)}
+.p .im{height:150px;display:grid;place-items:center;font-size:56px;background:linear-gradient(135deg,#3a0c0f,var(--red));position:relative}
+.p .im img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.p .tx{padding:14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.p h3{font-size:17px}
+.p small{color:#555;flex:1}
+.price{color:var(--red);font-weight:800}
+.p .act{display:flex;gap:6px;flex-wrap:wrap}
+.p .btn{flex:1;text-align:center}
+.p .btn.ghost{border-color:var(--red);color:var(--red)}
+.p .btn.ghost:hover{background:var(--red);color:#fff}
+iframe{width:100%;height:340px;border:0;border-radius:16px;margin-top:16px}
+/* reviews */
+.stars{color:#f5b301;letter-spacing:2px;font-size:20px;white-space:nowrap}
+.stars .off{color:#555}
+.avg{display:flex;align-items:center;gap:12px;margin-bottom:10px;font-size:18px;flex-wrap:wrap}
+.avg b{font-size:34px}
+.rv .who{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:4px;flex-wrap:wrap}
+.rv .who b{margin:0}
+.rv .dt{font-size:12px;opacity:.55;margin-bottom:6px}
+.rv p{margin:6px 0;font-size:15px;word-break:break-word}
+.rv p i{font-style:normal;font-weight:700;color:var(--red)}
+.rform{max-width:640px;background:rgba(20,20,20,.9);border:1px solid #333;border-radius:16px;padding:22px;margin-top:20px}
+.rform h3{margin-bottom:10px;font-size:22px}
+.pick{display:flex;gap:4px;margin:6px 0 12px}
+.pick button{background:none;border:0;cursor:pointer;font-size:38px;line-height:1;color:#555;transition:.15s}
+.pick button.on{color:#f5b301}
+.pick button:hover{transform:scale(1.15)}
+#r-ok{display:none;color:#6fdc8c;margin-top:10px}
+.warn{background:#3a2a00;border:1px solid #8a6a00;color:#ffd978;border-radius:10px;padding:10px 12px;font-size:13px;margin-bottom:12px}
+.hp{position:absolute;left:-9999px;opacity:0;height:0;width:0}
+/* cart */
+#fab{position:fixed;right:16px;bottom:16px;z-index:60;box-shadow:0 6px 20px rgba(0,0,0,.6)}
+#ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:70}
+#cart{position:fixed;top:0;right:-100%;width:min(440px,100%);height:100%;background:#151515;z-index:80;transition:.3s;overflow:auto;padding:20px;border-left:2px solid var(--red)}
+#cart.open{right:0}
+#ov.open{display:block}
+.it{display:flex;align-items:center;gap:8px;padding:10px 0;border-bottom:1px solid #333}
+.it span{flex:1}
+.q{display:flex;align-items:center;gap:6px}
+.q button{width:30px;height:30px;border-radius:8px;border:0;background:#333;color:#fff;font-size:18px;cursor:pointer}
+input,textarea,select{width:100%;padding:12px;border-radius:10px;border:1px solid #444;background:#222;color:#fff;font:inherit;margin:5px 0}
+label{font-size:13px;opacity:.8}
+.note{font-size:13px;opacity:.7;margin:8px 0}
+footer{background:#000;border-top:2px solid var(--red);padding:26px 0 90px;text-align:center;font-size:14px;opacity:.9}
+footer a{color:var(--red);margin:0 8px}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="wrap bar">
+  <a href="#home" class="logo">ГОРНОЕ <span>МЯСО</span></a>
+  <button class="burger" onclick="document.getElementById('nav').classList.toggle('open')" aria-label="Меню">☰</button>
+  <nav id="nav">
+   <a href="#home" data-p="home">Главная</a>
+   <a href="#catalog" data-p="catalog">Каталог</a>
+   <a href="#fresh" data-p="fresh">Свежее мясо</a>
+   <a href="#marinade" data-p="marinade">В маринаде</a>
+   <a href="#semi" data-p="semi">Полуфабрикаты</a>
+   <a href="#other" data-p="other">Другие товары</a>
+   <a href="#reviews" data-p="reviews">Отзывы</a>
+   <a href="#delivery" data-p="delivery">Доставка</a>
+   <a href="#contacts" data-p="contacts">Контакты</a>
+  </nav>
+  <button class="btn hbtn" onclick="openCart()">Заказать</button>
+ </div>
+</header>
+
+<main class="wrap">
+
+<section class="page" id="p-home">
+ <div class="hero">
+  <h1>ГОРНОЕ <span>МЯСО</span></h1>
+  <p>Свежие продукты и мясо в маринаде в самом сердце Архыза.</p>
+  <div class="row">
+   <a class="btn" href="#catalog">Смотреть ассортимент</a>
+   <button class="btn ghost" onclick="openCart()">Оформить заказ</button>
+  </div>
+ </div>
+ <h2>Почему <em>мы</em></h2>
+ <div class="cards">
+  <div class="box"><div class="ic">🥩</div><b>Качество</b>Тщательно подбираем продукты для нашего магазина.</div>
+  <div class="box"><div class="ic">❄️</div><b>Свежесть</b>Свежее мясо, рыба и мясо в маринаде.</div>
+  <div class="box"><div class="ic">🤝</div><b>Вежливое обслуживание</b>Подскажем, что выбрать для вашего отдыха.</div>
+  <div class="box"><div class="ic">🔥</div><b>Всё для пикника</b>Уголь, розжиг, посуда и принадлежности для костра.</div>
+ </div>
+ <h2>Популярные <em>категории</em></h2>
+ <div class="cards">
+  <a class="box cat" href="#fresh"><div class="ic">🥩</div><b>Свежее мясо</b></a>
+  <a class="box cat" href="#marinade"><div class="ic">🍢</div><b>Мясо в маринаде</b></a>
+  <a class="box cat" href="#semi"><div class="ic">🐟</div><b>Полуфабрикаты</b></a>
+  <a class="box cat" href="#other"><div class="ic">🧺</div><b>Другие товары</b></a>
+ </div>
+ <h2>Доставка и <em>контакты</em></h2>
+ <p class="lead">Уточните наличие, стоимость и условия доставки у продавца. Мы на связи в WhatsApp и Telegram.</p>
+ <div class="row">
+  <a class="btn" href="#delivery">О доставке</a>
+  <a class="btn ghost" href="#reviews">Оставить отзыв</a>
+  <a class="btn ghost" href="#contacts">Контакты</a>
+ </div>
+</section>
+
+<section class="page" id="p-catalog">
+ <h2>Каталог <em>товаров</em></h2>
+ <p class="lead">Цены уточняйте у продавца — добавьте товары в заказ и отправьте его нам в мессенджер.</p>
+ <div id="g-catalog"></div>
+</section>
+<section class="page" id="p-fresh"><h2>Свежее <em>мясо</em></h2><div id="g-fresh"></div></section>
+<section class="page" id="p-marinade"><h2>Мясо <em>в маринаде</em></h2><div id="g-marinade"></div></section>
+<section class="page" id="p-semi"><h2>Мясные продукты и <em>полуфабрикаты</em></h2><div id="g-semi"></div></section>
+<section class="page" id="p-other"><h2>Другие <em>товары</em></h2><div id="g-other"></div></section>
+
+<!-- ОТЗЫВЫ -->
+<section class="page" id="p-reviews">
+ <h2><em>Отзывы</em> покупателей</h2>
+ <div id="rev"><p class="lead">Загружаем отзывы…</p></div>
+
+ <form class="rform" id="rform" onsubmit="return sendReview(event)">
+  <h3>Оставить отзыв</h3>
+  <div class="warn" id="r-test" style="display:none">Тестовый режим: база отзывов ещё не подключена, поэтому отзывы видны только на этом устройстве. Подключите Firebase (инструкция есть в настройках кода), и отзывы станут видны всем.</div>
+  <p class="note">Ваше мнение помогает нам становиться лучше. Поставьте оценку и напишите, что понравилось, что улучшить и что убрать. Отзыв сразу появится на сайте.</p>
+  <label>Ваша оценка *</label>
+  <div class="pick" id="pick">
+   <button type="button" data-v="1" aria-label="1 звезда">★</button>
+   <button type="button" data-v="2" aria-label="2 звезды">★</button>
+   <button type="button" data-v="3" aria-label="3 звезды">★</button>
+   <button type="button" data-v="4" aria-label="4 звезды">★</button>
+   <button type="button" data-v="5" aria-label="5 звёзд">★</button>
+  </div>
+  <label>Имя (необязательно)</label>
+  <input id="r-name" maxlength="60" placeholder="Как вас зовут">
+  <label>Что понравилось</label>
+  <textarea id="r-good" rows="3" maxlength="600" placeholder="Что было хорошо"></textarea>
+  <label>Что улучшить</label>
+  <textarea id="r-better" rows="3" maxlength="600" placeholder="Что стоит сделать лучше"></textarea>
+  <label>Что убрать</label>
+  <textarea id="r-remove" rows="2" maxlength="600" placeholder="Что, по-вашему, лишнее"></textarea>
+  <label>Другой комментарий</label>
+  <textarea id="r-other" rows="2" maxlength="600" placeholder="Любые пожелания"></textarea>
+  <input class="hp" id="r-site" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <div class="row" style="margin-top:12px">
+   <button class="btn" type="submit" id="r-send">Отправить отзыв</button>
+  </div>
+  <p id="r-ok">Спасибо! Ваш отзыв опубликован.</p>
+ </form>
+</section>
+
+<section class="page" id="p-delivery">
+ <h2><em>Доставка</em></h2>
+ <div class="cards" id="dlv"></div>
+ <p class="lead">Чтобы уточнить доставку по вашему адресу, напишите нам:</p>
+ <div class="row">
+  <a class="btn" target="_blank" rel="noopener" href="https://wa.me/79886060203">WhatsApp</a>
+  <a class="btn ghost" target="_blank" rel="noopener" href="https://t.me/meatarkhyz">Telegram</a>
+ </div>
+</section>
+
+<section class="page" id="p-contacts">
+ <h2><em>Контакты</em></h2>
+ <div class="cards">
+  <div class="box"><b>Магазин</b>Горное мясо</div>
+  <div class="box"><b>Адрес</b>КЧР, Архыз, улица Ленина, 35</div>
+  <div class="box"><b>WhatsApp</b><a href="https://wa.me/79886060203" target="_blank" rel="noopener">8 (988) 606-02-03</a></div>
+  <div class="box"><b>Telegram</b><a href="https://t.me/meatarkhyz" target="_blank" rel="noopener">@meatarkhyz</a></div>
+  <div class="box"><b>Instagram</b><a href="https://instagram.com/meat_arkhyz" target="_blank" rel="noopener">meat_arkhyz</a></div>
+ </div>
+ <div class="row">
+  <a class="btn" href="https://wa.me/79886060203" target="_blank" rel="noopener">Написать в WhatsApp</a>
+  <a class="btn ghost" href="https://t.me/meatarkhyz" target="_blank" rel="noopener">Написать в Telegram</a>
+  <a class="btn ghost" href="https://yandex.ru/maps/?text=Архыз%2C%20улица%20Ленина%2C%2035" target="_blank" rel="noopener">Открыть в Яндекс Картах</a>
+ </div>
+ <iframe loading="lazy" title="Карта" src="https://yandex.ru/map-widget/v1/?text=%D0%90%D1%80%D1%85%D1%8B%D0%B7%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0%2C%2035&z=16"></iframe>
+</section>
+
+</main>
+
+<footer>
+ <div class="wrap">
+  © Горное мясо, Архыз · КЧР, улица Ленина, 35<br><br>
+  <a href="https://wa.me/79886060203" target="_blank" rel="noopener">WhatsApp</a>
+  <a href="https://t.me/meatarkhyz" target="_blank" rel="noopener">Telegram</a>
+  <a href="https://instagram.com/meat_arkhyz" target="_blank" rel="noopener">Instagram</a>
+ </div>
+</footer>
+
+<button class="btn" id="fab" onclick="openCart()">🛒 Заказ: <b id="cnt">0</b></button>
+<div id="ov" onclick="closeCart()"></div>
+
+<aside id="cart">
+ <div class="row" style="justify-content:space-between;align-items:center">
+  <h2 style="margin:0">Ваш заказ</h2>
+  <button class="btn small ghost" onclick="closeCart()">✕</button>
+ </div>
+ <div id="items"></div>
+ <p class="note">Цены не рассчитываются автоматически: стоимость, наличие и условия доставки подтвердит продавец.</p>
+ <label>Имя</label><input id="f-name" placeholder="Как к вам обращаться">
+ <label>Телефон или Telegram</label><input id="f-contact" placeholder="Ваши контакты">
+ <label>Удобный способ связи</label>
+ <select id="f-way"><option>WhatsApp</option><option>Telegram</option><option>Звонок</option></select>
+ <label>Адрес доставки (если нужна)</label><input id="f-addr" placeholder="Необязательно">
+ <label>Комментарий</label><textarea id="f-com" rows="3" placeholder="Пожелания к заказу"></textarea>
+ <div class="row" style="margin-top:10px">
+  <button class="btn" onclick="send('wa')">Отправить в WhatsApp</button>
+  <button class="btn ghost" onclick="send('tg')">Отправить в Telegram</button>
+ </div>
+ <p class="note">Telegram: текст заказа скопируется в буфер — просто вставьте его в чат с магазином.</p>
+</aside>
+
+<!-- Firebase (база отзывов) -->
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+<script>
+/* ======== НАСТРОЙКИ (меняйте здесь) ======== */
+const WA = "79886060203";
+const TG = "meatarkhyz";
+
+/* ---------- БАЗА ОТЗЫВОВ (Firebase) ----------
+   Пока поля пустые, отзывы работают в тестовом режиме (видны только на этом устройстве).
+   Как подключить (бесплатно, ~10 минут):
+   1. Зайдите на console.firebase.google.com → «Создать проект» (аналитику можно отключить).
+   2. В проекте: «Сборка» → «Firestore Database» → «Создать базу данных» → режим «production».
+   3. Вкладка «Правила» → вставьте правила из моей инструкции → «Опубликовать».
+   4. Значок «шестерёнка» → «Настройки проекта» → внизу «Ваши приложения» → значок </> (веб) →
+      зарегистрируйте приложение → скопируйте объект firebaseConfig и вставьте ниже. */
+const FIREBASE_CONFIG = {
+  apiKey: "AIzaSyAQ6sK7q1f0RwFhwJJXtvjfzI5ergyzRsI",
+  authDomain: "meat-arkhyz.firebaseapp.com",
+  projectId: "meat-arkhyz",
+  storageBucket: "meat-arkhyz.firebasestorage.app",
+  messagingSenderId: "336209828314",
+  appId: "1:336209828314:web:adec17fa2ee3afe79d88e3"
+};
+
+/* Доставка: заполните позже. Пустое поле покажет «Уточняйте у продавца». */
+const DELIVERY = {
+  "Условия получения заказа": "",
+  "Стоимость доставки": "",
+  "Сроки": "",
+  "География доставки": ""
+};
+
+/* Товары. price: "" = «Уточнить цену». img: "foto.jpg" — своё фото. */
+const P = (cat,name,emoji,desc)=>({cat,name,emoji,desc,price:"",img:""});
+const PRODUCTS = [
+ P("fresh","Говядина","🥩","Свежая говядина."),
+ P("fresh","Баранина","🍖","Свежая баранина."),
+ P("fresh","Курица","🍗","Свежая курица."),
+ P("fresh","Форель","🐟","Свежая форель."),
+ P("marinade","Говядина в маринаде","🥩","Говядина в маринаде для мангала."),
+ P("marinade","Баранина в маринаде","🍢","Баранина в маринаде для мангала."),
+ P("marinade","Курица в маринаде","🍗","Курица в маринаде для мангала."),
+ P("marinade","Форель в маринаде","🐟","Форель в маринаде для мангала."),
+ P("semi","Люля-кебаб","🍢","Люля-кебаб."),
+ P("semi","Печень","🥩","Печень."),
+ P("semi","Печень в жировой сетке","🥩","Печень в жировой сетке."),
+ P("semi","Мясной фарш","🥩","Мясной фарш."),
+ P("semi","Говяжья вырезка","🥩","Говяжья вырезка."),
+ P("semi","Стейки из форели","🐟","Стейки из форели."),
+ P("semi","Стейки из сёмги","🍣","Стейки из сёмги."),
+ ...["Молочная продукция|🥛","Уголь|🔥","Средство для розжига|🧴","Варенье|🍯","Овощи|🥕","Принадлежности для костра|🏕️","Одноразовая посуда|🍽️","Салфетки|🧻","Сладости|🍬","Орехи|🥜","Маршмеллоу|🍡","Специи|🌶️","Маринады|🧂","Вода|💧","Чай|🍵","Домашний соус|🥫"]
+  .map(s=>{const [n,e]=s.split("|");return P("other",n,e,"")})
+];
+PRODUCTS.forEach((p,i)=>p.id=i);
+
+/* ======== КОД ======== */
+const CATS={fresh:"Свежее мясо",marinade:"Мясо в маринаде",semi:"Мясные продукты и полуфабрикаты",other:"Другие товары"};
+let cart={};
+try{cart=JSON.parse(localStorage.getItem("gm_cart")||"{}")}catch(e){cart={}}
+const $=id=>document.getElementById(id);
+const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+function card(p){
+ return `<div class="p"><div class="im">${p.img?`<img src="${esc(p.img)}" alt="${esc(p.name)}" loading="lazy">`:p.emoji}</div>
+ <div class="tx"><h3>${p.name}</h3>${p.desc?`<small>${p.desc}</small>`:"<small></small>"}
+ <div class="price">${p.price||"Уточнить цену"}</div>
+ <div class="act"><button class="btn small" onclick="add(${p.id})">В заказ</button>
+ <a class="btn small ghost" target="_blank" rel="noopener" href="https://wa.me/${WA}?text=${encodeURIComponent("Здравствуйте! Хочу уточнить цену: "+p.name)}">Уточнить цену</a></div></div></div>`;
+}
+function grid(cat){return `<div class="grid">${PRODUCTS.filter(p=>p.cat===cat).map(card).join("")}</div>`}
+["fresh","marinade","semi","other"].forEach(c=>$("g-"+c).innerHTML=grid(c));
+$("g-catalog").innerHTML=Object.keys(CATS).map(c=>`<h2 style="font-size:24px;margin-top:20px"><em>${CATS[c]}</em></h2>${grid(c)}`).join("");
+
+/* ================= ОТЗЫВЫ ================= */
+let REVIEWS=[];
+let db=null;
+const FB_ON=!!(FIREBASE_CONFIG.apiKey&&FIREBASE_CONFIG.projectId&&window.firebase);
+
+function starsHtml(n){let s="";for(let i=1;i<=5;i++)s+=i<=n?"★":`<span class="off">★</span>`;return `<span class="stars">${s}</span>`}
+function fmtDate(d){try{return d.toLocaleDateString("ru-RU",{day:"numeric",month:"long",year:"numeric"})}catch(e){return ""}}
+function plural(n){const a=n%10,b=n%100;if(a===1&&b!==11)return"отзыв";if(a>=2&&a<=4&&(b<10||b>=20))return"отзыва";return"отзывов"}
+
+function renderReviews(){
+ if(!REVIEWS.length){
+  $("rev").innerHTML=`<p class="lead">Пока отзывов нет. Станьте первым — оставьте оценку и пожелания в форме ниже.</p>`;
+  return;
+ }
+ const avg=REVIEWS.reduce((s,r)=>s+(+r.rating||0),0)/REVIEWS.length;
+ $("rev").innerHTML=`<div class="avg"><b>${avg.toFixed(1)}</b>${starsHtml(Math.round(avg))}<span>${REVIEWS.length} ${plural(REVIEWS.length)}</span></div>
+ <div class="cards">${REVIEWS.map(r=>`<div class="box rv">
+  <div class="who"><b>${esc(r.name||"Покупатель")}</b>${starsHtml(+r.rating||0)}</div>
+  <div class="dt">${r.ts?fmtDate(r.ts):""}</div>
+  ${r.good?`<p><i>Понравилось:</i> ${esc(r.good)}</p>`:""}
+  ${r.better?`<p><i>Улучшить:</i> ${esc(r.better)}</p>`:""}
+  ${r.remove?`<p><i>Убрать:</i> ${esc(r.remove)}</p>`:""}
+  ${r.text?`<p>${esc(r.text)}</p>`:""}
+ </div>`).join("")}</div>`;
+}
+
+function loadLocal(){
+ try{
+  REVIEWS=JSON.parse(localStorage.getItem("gm_reviews")||"[]").map(r=>({...r,ts:new Date(r.ts)}));
+ }catch(e){REVIEWS=[]}
+ renderReviews();
+}
+
+if(FB_ON){
+ try{
+  firebase.initializeApp(FIREBASE_CONFIG);
+  db=firebase.firestore();
+  db.collection("reviews").orderBy("createdAt","desc").limit(100).onSnapshot(
+   snap=>{
+    REVIEWS=snap.docs.map(d=>{const x=d.data({serverTimestamps:"estimate"});x.ts=x.createdAt&&x.createdAt.toDate?x.createdAt.toDate():new Date();return x});
+    renderReviews();
+   },
+   err=>{console.error(err);$("rev").innerHTML=`<p class="lead">Не удалось загрузить отзывы. Попробуйте обновить страницу позже.</p>`}
+  );
+ }catch(e){console.error(e);db=null;$("r-test").style.display="block";loadLocal()}
+}else{
+ $("r-test").style.display="block";
+ loadLocal();
+}
+
+let rating=0;
+document.querySelectorAll("#pick button").forEach(b=>b.addEventListener("click",()=>{
+ rating=+b.dataset.v;
+ document.querySelectorAll("#pick button").forEach(x=>x.classList.toggle("on",+x.dataset.v<=rating));
+}));
+
+function sendReview(e){
+ e.preventDefault();
+ if($("r-site").value)return false; /* защита от ботов */
+ if(!rating){alert("Поставьте оценку от 1 до 5 звёзд");return false}
+ const last=+localStorage.getItem("gm_last_review")||0;
+ if(Date.now()-last<60000){alert("Подождите минуту перед отправкой следующего отзыва");return false}
+ const g=id=>$(id).value.trim().slice(0,600);
+ const d={name:(g("r-name")||"Покупатель").slice(0,60),rating,good:g("r-good"),better:g("r-better"),remove:g("r-remove"),text:g("r-other")};
+ const btn=$("r-send");
+ const done=()=>{
+  try{localStorage.setItem("gm_last_review",Date.now())}catch(e){}
+  $("r-ok").style.display="block";
+  setTimeout(()=>{$("r-ok").style.display="none"},6000);
+  $("rform").reset();rating=0;
+  document.querySelectorAll("#pick button").forEach(x=>x.classList.remove("on"));
+  btn.disabled=false;btn.textContent="Отправить отзыв";
+ };
+ btn.disabled=true;btn.textContent="Отправляем…";
+ if(db){
+  db.collection("reviews").add({...d,createdAt:firebase.firestore.FieldValue.serverTimestamp()})
+   .then(done)
+   .catch(err=>{console.error(err);btn.disabled=false;btn.textContent="Отправить отзыв";alert("Не удалось отправить отзыв. Попробуйте позже.")});
+ }else{
+  let arr=[];
+  try{arr=JSON.parse(localStorage.getItem("gm_reviews")||"[]")}catch(x){}
+  arr.unshift({...d,ts:new Date().toISOString()});
+  try{localStorage.setItem("gm_reviews",JSON.stringify(arr.slice(0,100)))}catch(x){}
+  loadLocal();done();
+ }
+ return false;
+}
+
+/* доставка */
+$("dlv").innerHTML=Object.entries(DELIVERY).map(([k,v])=>`<div class="box"><b>${k}</b>${esc(v)||"Уточняйте у продавца"}</div>`).join("");
+
+/* навигация */
+function route(){
+ const h=(location.hash||"#home").slice(1);
+ const id=$("p-"+h)?h:"home";
+ document.querySelectorAll(".page").forEach(s=>s.classList.toggle("on",s.id==="p-"+id));
+ document.querySelectorAll("nav a").forEach(a=>a.classList.toggle("on",a.dataset.p===id));
+ $("nav").classList.remove("open");
+ window.scrollTo(0,0);
+}
+addEventListener("hashchange",route);route();
+
+/* корзина */
+function save(){try{localStorage.setItem("gm_cart",JSON.stringify(cart))}catch(e){}render()}
+function add(id){cart[id]=(cart[id]||0)+1;save();openCart()}
+function chg(id,d){cart[id]=(cart[id]||0)+d;if(cart[id]<=0)delete cart[id];save()}
+function render(){
+ Object.keys(cart).forEach(i=>{if(!PRODUCTS[i])delete cart[i]});
+ const ids=Object.keys(cart);
+ $("cnt").textContent=ids.reduce((s,i)=>s+cart[i],0);
+ $("items").innerHTML=ids.length?ids.map(i=>`<div class="it"><span>${PRODUCTS[i].name}</span>
+ <div class="q"><button onclick="chg(${i},-1)">−</button><b>${cart[i]}</b><button onclick="chg(${i},1)">+</button></div></div>`).join("")
+ :`<p class="note" style="margin:20px 0">Корзина пуста. Добавьте товары из каталога.</p>`;
+}
+function openCart(){$("cart").classList.add("open");$("ov").classList.add("open")}
+function closeCart(){$("cart").classList.remove("open");$("ov").classList.remove("open")}
+render();
+
+function buildText(){
+ const ids=Object.keys(cart);
+ const g=id=>$(id).value.trim();
+ let t="Здравствуйте! Хочу оформить заказ в «Горном мясе»:\n\n";
+ t+=ids.map((i,n)=>`${n+1}. ${PRODUCTS[i].name} — ${cart[i]}`).join("\n");
+ t+="\n\nИмя: "+(g("f-name")||"—")+"\nКонтакты: "+(g("f-contact")||"—")+"\nСвязь: "+g("f-way");
+ if(g("f-addr"))t+="\nАдрес: "+g("f-addr");
+ if(g("f-com"))t+="\nКомментарий: "+g("f-com");
+ t+="\n\nПрошу уточнить наличие, стоимость и условия доставки.";
+ return t;
+}
+function send(w){
+ if(!Object.keys(cart).length){alert("Добавьте хотя бы один товар");return}
+ if(!$("f-name").value.trim()||!$("f-contact").value.trim()){alert("Укажите имя и контакты");return}
+ const t=buildText();
+ if(w==="wa"){window.open(`https://wa.me/${WA}?text=${encodeURIComponent(t)}`,"_blank")}
+ else{
+  (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>alert("Заказ скопирован. Вставьте его в чат Telegram и отправьте.")).catch(()=>prompt("Скопируйте текст заказа:",t));
+  window.open(`https://t.me/${TG}`,"_blank");
+ }
+}
+</script>
+</body>
+</html>
